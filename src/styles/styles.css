@@ -1,0 +1,244 @@
+/* General styling */
+body {
+    background-color: #65121F; /* Dark maroon background */
+    color: #F6CCB4; /* Light text color for contrast */
+}
+
+/* Home Container */
+.home-container {
+    padding: 20px;
+    text-align: center;
+    color: #F6CCB4; /* Light pink color for readability */
+}
+
+/* Book Management Container */
+.book-management-container {
+    background-color: #23172D; /* Dark purple background for book management area */
+    padding: 20px;
+    border-radius: 5px;
+    color: #F6CCB4; /* Light text for readability */
+}
+
+/* Book List Container */
+.book-list-container {
+    padding: 20px;
+    background-color: #65121F; /* Deep red background for book list */
+    color: #F6CCB4; /* Ensure text is visible */
+    border-radius: 5px;
+}
+
+
+
+.form-container {
+    background-color: #23172D; /* Dark background */
+    color: #F6CCB4; /* Light text color */
+    padding: 30px; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Maximum width for the form */
+    margin: 50px auto; /* Center the form horizontally with top margin */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+/* Grouping form inputs */
+.form-group {
+    margin-bottom: 15px; /* Spacing between inputs */
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for input fields */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #A73F40; /* Light border */
+    background-color: #431917; /* Darker background */
+    color: #F6CCB4; /* Light text color */
+}
+
+/* Style for textarea */
+textarea {
+    height: 100px; /* Set a height for the textarea */
+}
+
+.button-group {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px; /* Spacing above buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+button {
+    padding: 12px 25px; /* Increase padding for larger button size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+/* Style for Update button */
+button[type="submit"] {
+    background-color: #D62626; /* Red background for update */
+    color: #F6CCB4; /* Light text color */
+}
+
+/* Style for Cancel button */
+button[type="button"] {
+    background-color: #65121F; /* Darker red for cancel */
+    color: #F6CCB4; /* Light text color */
+}
+
+button:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #A73F40; /* Darker red on hover */
+}
+
+button[type="button"]:hover {
+    background-color: #431917; /* Even darker red on hover */
+}
+
+
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+
+/*Book list design */
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    color: #F6CCB4; /* Light color from the palette */
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.button-add {
+    background-color: #384278; /* Primary red */
+    color: #F6CCB4; /* Light color for contrast */
+    padding: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    min-width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.book-table th, .book-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #A73F40; /* Accent color */
+}
+
+.action-buttons .button {
+    margin-right: 5px;
+}
+
+.button-view {
+    background-color: #23172D; /* Dark red variant */
+}
+
+.button-edit {
+    background-color: #A73F40; /* Accent color */
+}
+
+.button-delete {
+    background-color: #431917; /* Darker color */
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/* Styles for the details container */
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #23172D; /* Darkest background color */
+    color: #F6CCB4; /* Light text color */
+}
+
+/* Styles for the book details */
+.details {
+    background-color: #431917; /* Dark background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Styles for each detail item */
+.detail-item {
+    margin-bottom: 10px;
+}
+
+/* Back button styling */
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #D62626; /* Primary red */
+    color: #F6CCB4; /* Light color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for back button */
+.back-button:hover {
+    background-color: #A73F40; /* Slightly darker red */
+    transform: scale(1.05);
+}
